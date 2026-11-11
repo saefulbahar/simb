@@ -2,9 +2,8 @@
 
 <section class="hero">
   <div class="hero-in">
-    <span class="pill">🌊 Sistem Informasi Manajemen Bencana</span>
+    <span class="pill">Sistem Informasi Manajemen Bencana</span>
     <h1>Banjir</h1>
-    <p class="sub">Mengenali, Mencegah, dan Mengurangi Risiko Bencana Banjir</p>
     <a class="btn" href="berita.php">📰 Berita Terkini</a> <a class="btn ghost" href="#materi">📖 Pelajari Materi</a>
   </div>
   <aside class="weather">
@@ -32,10 +31,10 @@
 <div class="panel" id="jenis">
 <div class="banner" style="--img:url('assets/img/rumah.jpg')"><h2>Jenis-Jenis <em>Banjir</em></h2></div>
   <?php cards([
-    ['🌊','Banjir Bandang','Air deras datang secara tiba-tiba dengan membawa material seperti lumpur, batu, dan kayu.'],
-    ['⛰️','Banjir Kiriman','Air dari hulu yang mengalir ke dalam hilir.'],
-    ['🌅','Banjir Rob','Genangan akibat pasang air laut di wilayah pesisir.'],
-    ['🌧️','Banjir Lokal','Genangan akibat hujan setempat dan drainase buruk.'],
+    ['Banjir Bandang','Air deras datang secara tiba-tiba dengan membawa material seperti lumpur, batu, dan kayu.'],
+    ['Banjir Kiriman','Air dari hulu yang mengalir ke dalam hilir.'],
+    ['Banjir Rob','Genangan akibat pasang air laut di wilayah pesisir.'],
+    ['Banjir Lokal','Genangan akibat hujan setempat dan drainase buruk.'],
   ]); ?>
 </div>
 
@@ -43,18 +42,18 @@
 <div class="banner" style="--img:url('assets/img/jalan.jpg')"><h2>Penyebab <em>Banjir</em></h2></div>
   <h3>Faktor Alam</h3>
   <?php cards([
-    ['⛈️','Curah Hujan Tinggi','Hujan dengan intensitas tinggi membuat jumlah air melebihi kemampuan tanah dan saluran air untuk menampungnya.'],
-    ['🏞️','Topografi Rendah','Daerah dataran rendah atau cekungan lebih mudah menjadi tempat berkumpulnya air.'],
-    ['🌊','Pasang Air Laut (Rob)','Naiknya air laut dapat menggenangi wilayah pesisir dan menghambat aliran air sungai menuju laut.'],
-    ['🏘️','Air Sungai Meluap','Debit air sungai melebihi kapasitas sungai sehingga air meluap ke daerah sekitarnya.'],
+    ['Curah Hujan Tinggi','Hujan dengan intensitas tinggi membuat jumlah air melebihi kemampuan tanah dan saluran air untuk menampungnya.'],
+    ['Topografi Rendah','Daerah dataran rendah atau cekungan lebih mudah menjadi tempat berkumpulnya air.'],
+    ['Pasang Air Laut (Rob)','Naiknya air laut dapat menggenangi wilayah pesisir dan menghambat aliran air sungai menuju laut.'],
+    ['Air Sungai Meluap','Debit air sungai melebihi kapasitas sungai sehingga air meluap ke daerah sekitarnya.'],
   ]); ?>
   <h3>Faktor Manusia</h3>
   <?php cards([
-    ['🪓','Penggundulan Hutan','Air hujan langsung mengalir tanpa terserap akar pohon.'],
-    ['🏗️','Alih Fungsi Lahan','Lahan resapan berubah jadi permukiman/industri.'],
-    ['🚧','Drainase Buruk','Saluran air tidak memadai atau tersumbat.'],
-    ['🗑️','Sampah di Sungai','Sampah di sungai/saluran menghambat aliran air.'],
-    ['🌳','Perubahan Vegetasi','Perubahan pohon menjadi tanaman memengaruhi kemampuan tanah menahan air.'],
+    ['Penggundulan Hutan','Air hujan langsung mengalir tanpa terserap akar pohon.'],
+    ['Alih Fungsi Lahan','Lahan resapan berubah jadi permukiman/industri.'],
+    ['Drainase Buruk','Saluran air tidak memadai atau tersumbat.'],
+    ['Sampah di Sungai','Sampah di sungai/saluran menghambat aliran air.'],
+    ['Perubahan Vegetasi','Perubahan pohon menjadi tanaman memengaruhi kemampuan tanah menahan air.'],
   ], 'g5'); ?>
 </div>
 
@@ -62,18 +61,18 @@
 <div class="banner" style="--img:url('assets/img/jalan.jpg')"><h2>Dampak <em>Banjir</em></h2></div>
   <h3>Dampak Negatif</h3>
   <?php cards([
-    ['🦠','Masalah Kesehatan','Air banjir yang kotor dapat meningkatkan penyebaran penyakit kulit dan gangguan pencernaan, terutama pada anak-anak dan lansia.'],
-    ['💸','Kerugian Ekonomi','Banjir merusak rumah, kendaraan, dan barang-barang milik masyarakat sehingga menimbulkan kerugian ekonomi.'],
-    ['🚰','Sulitnya Air Bersih','Banjir dapat mencemari sumber air bersih sehingga masyarakat kesulitan mendapatkan air yang aman.'],
-    ['🚫','Aktivitas Warga Terhambat','Genangan yang menutupi rumah dan jalan menghambat bekerja, bersekolah, dan bepergian.'],
-    ['🆘','Munculnya Korban Jiwa','Banjir berarus deras dapat membahayakan keselamatan dan menyebabkan korban jiwa karena terseret atau terjebak.'],
+    ['Masalah Kesehatan','Air banjir yang kotor dapat meningkatkan penyebaran penyakit kulit dan gangguan pencernaan, terutama pada anak-anak dan lansia.'],
+    ['Kerugian Ekonomi','Banjir merusak rumah, kendaraan, dan barang-barang milik masyarakat sehingga menimbulkan kerugian ekonomi.'],
+    ['Sulitnya Air Bersih','Banjir dapat mencemari sumber air bersih sehingga masyarakat kesulitan mendapatkan air yang aman.'],
+    ['Aktivitas Warga Terhambat','Genangan yang menutupi rumah dan jalan menghambat bekerja, bersekolah, dan bepergian.'],
+    ['Munculnya Korban Jiwa','Banjir berarus deras dapat membahayakan keselamatan dan menyebabkan korban jiwa karena terseret atau terjebak.'],
   ], 'neg'); ?>
   <h3>Dampak Positif</h3>
   <?php cards([
-    ['🌱','Menyuburkan Tanah','Banjir membawa lumpur dan endapan berunsur hara sehingga meningkatkan kesuburan tanah di beberapa wilayah.'],
-    ['💧','Mengisi Kembali Sumber Air','Pada kondisi tertentu membantu mengisi kembali air tanah, sungai, dan daerah rawa yang kekurangan air.'],
-    ['♻️','Memperbarui Ekosistem Sungai','Aliran banjir membantu membersihkan limbah dan polutan di sungai sehingga mendukung kehidupan ikan, tumbuhan, dan hewan air.'],
-    ['🐟','Meningkatkan Keanekaragaman Hayati','Menciptakan kondisi yang mendukung perkembangbiakan dan perpindahan ikan dan burung air.'],
+    ['Menyuburkan Tanah','Banjir membawa lumpur dan endapan berunsur hara sehingga meningkatkan kesuburan tanah di beberapa wilayah.'],
+    ['Mengisi Kembali Sumber Air','Pada kondisi tertentu membantu mengisi kembali air tanah, sungai, dan daerah rawa yang kekurangan air.'],
+    [,'Memperbarui Ekosistem Sungai','Aliran banjir membantu membersihkan limbah dan polutan di sungai sehingga mendukung kehidupan ikan, tumbuhan, dan hewan air.'],
+    ['Meningkatkan Keanekaragaman Hayati','Menciptakan kondisi yang mendukung perkembangbiakan dan perpindahan ikan dan burung air.'],
   ]); ?>
 </div>
 
@@ -82,22 +81,22 @@
   <p class="lead center">Serangkaian upaya untuk mempersiapkan, menangani, dan memulihkan dampak banjir sebelum, saat, dan setelah bencana terjadi.</p>
   <h3>Sebelum Banjir</h3>
   <?php cards([
-    ['📋','Perencanaan & Koordinasi','Menyusun rencana menghadapi banjir bersama masyarakat dan pemerintah.'],
-    ['🎓','Edukasi & Pelatihan Masyarakat','Meningkatkan pengetahuan dan kesiapan masyarakat menghadapi banjir.'],
-    ['📢','Sistem Peringatan Dini','Menyiapkan sirine, pengeras suara, atau kentongan sebagai tanda bahaya.'],
-    ['🧭','Persiapan Evakuasi','Menyiapkan tempat dan jalur evakuasi serta tim pencarian dan penyelamatan.'],
+    ['Perencanaan & Koordinasi','Menyusun rencana menghadapi banjir bersama masyarakat dan pemerintah.'],
+    ['Edukasi & Pelatihan Masyarakat','Meningkatkan pengetahuan dan kesiapan masyarakat menghadapi banjir.'],
+    ['Sistem Peringatan Dini','Menyiapkan sirine, pengeras suara, atau kentongan sebagai tanda bahaya.'],
+    ['Persiapan Evakuasi','Menyiapkan tempat dan jalur evakuasi serta tim pencarian dan penyelamatan.'],
   ]); ?>
   <h3>Saat Banjir</h3>
   <?php cards([
-    ['🚣','Evakuasi','Memindahkan warga ke tempat aman dengan memprioritaskan anak-anak, lansia, dan ibu hamil.'],
-    ['🤝','Koordinasi & Penyelamatan','Koordinasi dengan pemerintah, masyarakat, PMI, dan SAR untuk pencarian serta penyelamatan korban.'],
-    ['📦','Pendataan & Logistik','Mendata korban serta menyiapkan pengungsian, tenaga medis, dan kebutuhan logistik.'],
+    ['Evakuasi','Memindahkan warga ke tempat aman dengan memprioritaskan anak-anak, lansia, dan ibu hamil.'],
+    ['Koordinasi & Penyelamatan','Koordinasi dengan pemerintah, masyarakat, PMI, dan SAR untuk pencarian serta penyelamatan korban.'],
+    ['Pendataan & Logistik','Mendata korban serta menyiapkan pengungsian, tenaga medis, dan kebutuhan logistik.'],
   ], 'g3'); ?>
   <h3>Setelah Banjir</h3>
   <?php cards([
-    ['📝','Analisis Kerusakan','Mendata dan mendokumentasikan kerusakan untuk menentukan kebutuhan perbaikan.'],
-    ['🧹','Pembersihan Pasca Banjir','Membersihkan lumpur, sampah, dan sisa material banjir untuk memulihkan lingkungan.'],
-    ['🏗️','Pemulihan & Rekonstruksi','Memperbaiki infrastruktur terdampak serta memperoleh bantuan dari pihak terkait.'],
+    ['Analisis Kerusakan','Mendata dan mendokumentasikan kerusakan untuk menentukan kebutuhan perbaikan.'],
+    ['Pembersihan Pasca Banjir','Membersihkan lumpur, sampah, dan sisa material banjir untuk memulihkan lingkungan.'],
+    ['Pemulihan & Rekonstruksi','Memperbaiki infrastruktur terdampak serta memperoleh bantuan dari pihak terkait.'],
   ], 'g3'); ?>
 </div>
 
@@ -107,20 +106,20 @@
   <h3>Mitigasi Struktural</h3>
   <p class="note">Upaya mengurangi risiko bencana melalui pembangunan infrastruktur prasarana fisik dan rekayasa teknologi.</p>
   <?php cards([
-    ['🕳️','Drainase & Resapan','Saluran air diperbaiki, ditambah biopori dan sumur resapan supaya air hujan meresap ke tanah, bukan menggenang di jalan.'],
-    ['🚜','Normalisasi Sungai','Sungai dikeruk dari sedimentasi dan sampah agar kapasitas aliran kembali normal dan air tidak mudah meluap.'],
+    ['Drainase & Resapan','Saluran air diperbaiki, ditambah biopori dan sumur resapan supaya air hujan meresap ke tanah, bukan menggenang di jalan.'],
+    ['Normalisasi Sungai','Sungai dikeruk dari sedimentasi dan sampah agar kapasitas aliran kembali normal dan air tidak mudah meluap.'],
   ], 'g2'); ?>
   <h3>Mitigasi Non-Struktural</h3>
   <p class="note">Upaya pengurangan risiko melalui kebijakan, regulasi, dan edukasi kesiapsiagaan masyarakat.</p>
   <?php cards([
-    ['🌲','Konservasi Daerah Hulu','Penghijauan dan menjaga hutan membuat tanah mampu menyerap hujan, sehingga debit sungai di hilir tidak naik tiba-tiba.'],
-    ['♻️','Edukasi & Pengelolaan Sampah','Masyarakat dilatih siaga bencana dan tidak membuang sampah ke saluran agar drainase tidak tersumbat.'],
+    ['Konservasi Daerah Hulu','Penghijauan dan menjaga hutan membuat tanah mampu menyerap hujan, sehingga debit sungai di hilir tidak naik tiba-tiba.'],
+    ['Edukasi & Pengelolaan Sampah','Masyarakat dilatih siaga bencana dan tidak membuang sampah ke saluran agar drainase tidak tersumbat.'],
   ], 'g2'); ?>
   <h3>Jalur Evakuasi</h3>
   <?php cards([
-    ['📍','Tentukan Titik Aman','Pilih tempat yang lebih tinggi, tidak tergenang, dan mudah dijangkau warga, misalnya balai RT atau gedung bertingkat.'],
-    ['🪧','Pasang Rambu Evakuasi','Jalur evakuasi ditandai jelas agar saat banjir datang warga tidak bingung harus ke mana.'],
-    ['👵','Prioritaskan Kelompok Rentan','Anak-anak, lansia, ibu hamil, dan penyandang disabilitas dievakuasi lebih dulu.'],
+    ['Tentukan Titik Aman','Pilih tempat yang lebih tinggi, tidak tergenang, dan mudah dijangkau warga, misalnya balai RT atau gedung bertingkat.'],
+    ['Pasang Rambu Evakuasi','Jalur evakuasi ditandai jelas agar saat banjir datang warga tidak bingung harus ke mana.'],
+    ['Prioritaskan Kelompok Rentan','Anak-anak, lansia, ibu hamil, dan penyandang disabilitas dievakuasi lebih dulu.'],
   ], 'g3'); ?>
 </div>
 
