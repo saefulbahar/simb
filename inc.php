@@ -19,7 +19,7 @@ function head(string $title, string $page = ''): void {
 <?php }
 
 function foot(): void { ?>
-<footer>Sistem Informasi Manajemen Bencana · Kelompok 1</footer>
+<footer>Sistem Informasi Manajemen Bencana · Banjir</footer>
 </body></html>
 <?php }
 

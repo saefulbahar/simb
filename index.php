@@ -71,7 +71,7 @@
   <?php cards([
     ['Menyuburkan Tanah','Banjir membawa lumpur dan endapan berunsur hara sehingga meningkatkan kesuburan tanah di beberapa wilayah.'],
     ['Mengisi Kembali Sumber Air','Pada kondisi tertentu membantu mengisi kembali air tanah, sungai, dan daerah rawa yang kekurangan air.'],
-    [,'Memperbarui Ekosistem Sungai','Aliran banjir membantu membersihkan limbah dan polutan di sungai sehingga mendukung kehidupan ikan, tumbuhan, dan hewan air.'],
+    ['Memperbarui Ekosistem Sungai','Aliran banjir membantu membersihkan limbah dan polutan di sungai sehingga mendukung kehidupan ikan, tumbuhan, dan hewan air.'],
     ['Meningkatkan Keanekaragaman Hayati','Menciptakan kondisi yang mendukung perkembangbiakan dan perpindahan ikan dan burung air.'],
   ]); ?>
 </div>
