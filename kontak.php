@@ -8,7 +8,7 @@ $kontak = [
     ['instansi' => 'Pemadam Kebakaran',  'keterangan' => 'Bantuan evakuasi dan penyedotan air',     'nomor' => '113',           'icon' => 'bi-fire'],
     ['instansi' => 'PLN',                'keterangan' => 'Gangguan listrik saat banjir',            'nomor' => '123',           'icon' => 'bi-lightning-charge-fill'],
     ['instansi' => 'PMI',                'keterangan' => 'Bantuan kemanusiaan dan logistik',        'nomor' => '(021) 7992325', 'icon' => 'bi-plus-circle-fill'],
-    ['instansi' => 'BPBD Setempat',      'keterangan' => 'Nomor darurat BPBD di wilayah Yogyakarta (DIY)',   'nomor' => '(0274) 555836','icon' => 'bi-building'],
+    ['instansi' => 'BPBD Setempat',      'keterangan' => 'nomor darurat BPBD di wilayah Yogyakarta (DIY)',   'nomor' => '(0274) 555836','icon' => 'bi-building'],
 ];
 
 $posko = [
@@ -22,11 +22,11 @@ $posko = [
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kontak Darurat | SIMB Banjir</title>
+    <title>Kontak Darurat</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
         :root {
@@ -41,11 +41,10 @@ $posko = [
         }
 
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Open Sans', Arial, sans-serif;
             background: var(--abu-bg);
             color: var(--teks);
         }
-
 
         .navbar {
             background: var(--navy);
@@ -96,7 +95,6 @@ $posko = [
         .btn-garis { border: 1px solid var(--garis); color: var(--teks); background: #fff; }
         .btn-garis:hover { background: var(--abu-bg); }
 
-
         .judul-bagian {
             font-size: 1.15rem;
             font-weight: 600;
@@ -136,7 +134,6 @@ $posko = [
         }
         .btn-telp:hover { background: #0b5ed7; color: #fff; }
 
-        
         .tabel-posko { margin: 0; }
         .tabel-posko thead th {
             background: #eef2f7;
@@ -148,7 +145,6 @@ $posko = [
         .tabel-posko td { font-size: .93rem; }
         .tabel-posko a { color: var(--biru-tua); text-decoration: none; }
 
-    
         .status-item {
             padding: 14px 18px;
             border-left: 5px solid;
@@ -160,7 +156,6 @@ $posko = [
         .status-siaga { border-left-color: #f9a825; }
         .status-awas  { border-left-color: #e53935; }
 
-       
         .daftar-tautan a {
             display: flex;
             justify-content: space-between;
@@ -238,7 +233,7 @@ $posko = [
             <div class="col-lg-5 d-flex flex-wrap gap-2 justify-content-lg-end">
                 <a href="tel:112" class="btn btn-112"><i class="bi bi-telephone-fill"></i> Telepon 112</a>
                 <a href="https://wa.me/6280000000000" target="_blank" class="btn btn-wa"><i class="bi bi-whatsapp"></i> WhatsApp</a>
-                <a href="#" class="btn btn-garis">Form Pengaduan</a>
+                <a href="pengaduanbanjir.php" class="btn btn-garis">Form Pengaduan</a>
             </div>
         </div>
     </div>
@@ -327,7 +322,7 @@ $posko = [
 </div>
 
 <footer>
-    RuangSiaga &middot;
+    © 2026 RuangSiagaBanjir
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
