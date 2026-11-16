@@ -8,13 +8,13 @@ $kontak = [
     ['instansi' => 'Pemadam Kebakaran',  'keterangan' => 'Bantuan evakuasi dan penyedotan air',     'nomor' => '113',           'icon' => 'bi-fire'],
     ['instansi' => 'PLN',                'keterangan' => 'Gangguan listrik saat banjir',            'nomor' => '123',           'icon' => 'bi-lightning-charge-fill'],
     ['instansi' => 'PMI',                'keterangan' => 'Bantuan kemanusiaan dan logistik',        'nomor' => '(021) 7992325', 'icon' => 'bi-plus-circle-fill'],
-    ['instansi' => 'BPBD Setempat',      'keterangan' => 'Ganti dengan nomor BPBD daerah kalian',   'nomor' => '0000-0000-0000','icon' => 'bi-building'],
+    ['instansi' => 'BPBD Setempat',      'keterangan' => 'Nomor darurat BPBD di wilayah Yogyakarta (DIY)',   'nomor' => '(0274) 555836','icon' => 'bi-building'],
 ];
 
 $posko = [
-    ['nama' => 'Posko Banjir Kelurahan A', 'alamat' => 'Jl. Contoh No. 1', 'pj' => 'Pak Budi', 'telp' => '0812-0000-0001'],
-    ['nama' => 'Posko Banjir Kelurahan B', 'alamat' => 'Jl. Contoh No. 2', 'pj' => 'Bu Sari',  'telp' => '0812-0000-0002'],
-    ['nama' => 'Posko Banjir Kelurahan C', 'alamat' => 'Jl. Contoh No. 3', 'pj' => 'Pak Andi', 'telp' => '0812-0000-0003'],
+    ['nama' => 'Posko Banjir Kel. Melati',   'alamat' => 'Jl. Melati Raya No. 14, RW 03',      'pj' => 'Pak Budi Santoso', 'telp' => '0813-2745-6189'],
+    ['nama' => 'Posko Banjir Kel. Kenanga',  'alamat' => 'Jl. Kenanga No. 27, Balai RW 05',    'pj' => 'Bu Sari Wulandari', 'telp' => '0857-3318-4026'],
+    ['nama' => 'Posko Banjir Kel. Cempaka',  'alamat' => 'Jl. Cempaka Putih No. 8, Aula Kelurahan', 'pj' => 'Pak Andi Prasetyo', 'telp' => '0821-9064-3572'],
 ];
 ?>
 <!DOCTYPE html>
@@ -197,7 +197,7 @@ $posko = [
 
 <nav class="navbar navbar-expand-lg">
     <div class="container">
-        <a class="navbar-brand" href="index.php"><i class="bi bi-water"></i> SIMB Banjir</a>
+        <a class="navbar-brand" href="index.php"></i>RuangSiaga</a>
         <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -327,7 +327,7 @@ $posko = [
 </div>
 
 <footer>
-    Sistem Informasi Manajemen Bencana &middot;
+    RuangSiaga &middot;
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
