@@ -1,16 +1,12 @@
 <?php
 require 'inc.php';
 
-// ====== DATA FAQ ======
-// Struktur: kategori => [ikon, judul, daftar [pertanyaan, jawaban]]
-// Jawaban bisa berupa teks biasa, atau array [pengantar, [[judul, isi], ...]] untuk daftar poin.
-// Tambah pertanyaan baru: salin satu baris [pertanyaan, jawaban] ke kategori yang sesuai.
 $faq = [
   'website' => ['💻', 'Seputar Website', [
     ['Apa fungsi RuangSiaga?',
      'RuangSiaga (Sistem Informasi Manajemen Bencana Banjir) menyediakan materi edukasi untuk mengenali, mencegah, dan mengurangi risiko bencana banjir, serta berita terkini, kontak darurat, dan fitur pencarian orang terdampak.'],
     ['Dari mana sumber data berita dan statistik?',
-     'Statistik berasal dari BNPB, sedangkan berita diringkas ulang dari media seperti Beritasatu, ANTARA, dan BNPB. Klik kartu berita untuk membaca versi lengkapnya di sumber asli.'],
+     'Statistik berasal dari BNPB (melalui Beritasatu), sedangkan berita diringkas ulang dari Beritasatu, ANTARA, BNPB, Okezone, RCTI+, dan IDN Times. Klik kartu berita untuk membaca versi lengkapnya di sumber asli.'],
     ['Seberapa sering berita dan statistik diperbarui?',
      'Data diperbarui secara berkala oleh pengelola, dan tanggal pembaruan terakhir tertera di halaman Berita Terkini. Untuk informasi yang paling baru, cek langsung situs BNPB dan BMKG.'],
     ['Siapa yang membuat website ini?',
@@ -49,7 +45,7 @@ $faq = [
        ['Awas', 'Air sudah melewati batas aman. Risiko banjir tinggi, bersiap mengungsi.'],
      ]]],
     ['Kapan saya harus mulai mengungsi?',
-     'Mulai bersiap saat status Siaga, dan segera mengungsi saat status Awas atau saat petugas menyarankannya. Jangan menunggu air masuk ke rumah, karena arus bisa naik dengan cepat.'],
+     'Mulai bersiap saat status Siaga. Saat status Awas, bersiap mengungsi dan segera berangkat begitu petugas menyarankannya atau air terus naik. Jangan menunggu air masuk ke rumah, karena arus bisa naik dengan cepat.'],
   ]],
 
   'darurat' => ['🚨', 'Saat Darurat', [
@@ -74,7 +70,7 @@ $faq = [
     ['Apa yang bisa saya lakukan sebagai warga untuk mencegah banjir?',
      'Jangan buang sampah ke sungai atau saluran, bersihkan selokan secara rutin, buat biopori atau sumur resapan, tanam pohon, dan ikut kerja bakti serta pelatihan siaga bencana.'],
     ['Bagaimana menyiapkan rencana evakuasi keluarga?',
-     'Sepakati titik kumpul yang aman dan lebih tinggi, hafalkan jalur menuju ke sana, simpan nomor darurat di HP dan di kertas, siapkan tas siaga, lalu pastikan semua anggota keluarga tahu rencananya, terutama anak-anak dan lansia.'],
+     'Sepakati titik kumpul yang lebih tinggi, tidak tergenang, dan mudah dijangkau (misalnya balai RT atau gedung bertingkat), hafalkan jalur menuju ke sana, simpan nomor darurat di HP dan di kertas, lalu siapkan tas siaga. Dahulukan anak-anak, lansia, ibu hamil, dan penyandang disabilitas saat evakuasi.'],
   ]],
 
   'setelah' => ['🧹', 'Setelah Banjir', [
@@ -127,25 +123,25 @@ function url_faq(string $k, string $q): string {
 
 head('FAQ', 'faq'); ?>
 <style>
-  .faq-page{--navy:#0f2240;--blue:#1d6fe0;--blue-soft:#eaf1fd;--sky:#1ea7f0;--ink:#1e293b;--muted:#64748b;--line:#e2e8f0;--bg:#f3f6fb;
-    background:var(--bg);color:var(--ink);padding-bottom:70px}
+  .faq-page{--navy:#0f2240;--blue:#1d6fe0;--blue-soft:#eaf1fd;--sky:#29b6f6;--ink:#1f2d3d;--muted:#6b7a8c;--line:#dde3ea;--bg:#f3f6fb;
+    background:var(--bg);color:var(--ink);padding-bottom:70px;font-family:'Poppins',sans-serif;line-height:1.5}
   .faq-page a{text-decoration:none}
 
   /* ---------- Band judul ---------- */
   .faq-band{background:var(--navy);padding:34px 0 62px!important}
   .faq-band .wrap,.faq-main{padding-top:0!important;padding-bottom:0!important}
-  .faq-crumb{font-size:.92rem;color:#cbd5e1;margin-bottom:14px}
+  .faq-crumb{font-size:.85rem;color:#a9b8cc;margin-bottom:10px}
   .faq-crumb a{color:var(--sky)}
-  .faq-crumb span{margin:0 8px;color:#64748b}
-  .faq-band h1{margin:0;color:#fff;font-size:clamp(1.9rem,4vw,2.5rem);font-weight:700;line-height:1.15}
-  .faq-band p{margin:8px 0 0;color:#cbd5e1;font-size:1.05rem}
+  .faq-crumb span{margin:0 8px;color:#7e93ad}
+  .faq-band h1{margin:0 0 6px;color:#fff;font-size:2rem;font-weight:700;line-height:1.2}
+  .faq-band p{margin:0;color:#a9b8cc;font-size:1rem}
 
   /* ---------- Kartu cari (menimpa band) ---------- */
   .faq-top{margin-top:-36px;position:relative;z-index:2;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px 32px;
     background:#fff;border:1px solid var(--line);border-left:6px solid var(--blue);border-radius:14px;padding:24px 30px;box-shadow:0 10px 30px rgba(15,34,64,.12)}
   .faq-top .txt{flex:1 1 320px}
-  .faq-top h2{margin:0 0 4px;font-size:1.45rem;color:var(--ink)}
-  .faq-top .txt p{margin:0;color:var(--muted);line-height:1.6}
+  .faq-top h2{margin:0 0 4px;font-size:1.15rem;font-weight:600;color:var(--ink)}
+  .faq-top .txt p{margin:0;color:var(--muted);font-size:.93rem;line-height:1.6}
   .faq-top .txt p a{color:var(--blue);font-weight:600}
   .faq-search{flex:1 1 420px;max-width:560px;display:flex;gap:10px;margin:0}
   .faq-search input{flex:1;min-width:0;padding:13px 16px;border:1px solid #cbd5e1;border-radius:10px;background:#f8fafc;color:var(--ink);font:inherit;transition:border-color .2s,box-shadow .2s,background .2s}
@@ -174,15 +170,15 @@ head('FAQ', 'faq'); ?>
   /* ---------- Judul seksi ---------- */
   .faq-sec{margin-bottom:38px}
   .faq-sec:last-child{margin-bottom:0}
-  .sec-title{position:relative;display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:0 0 18px;padding-bottom:10px;border-bottom:2px solid var(--line);font-size:1.4rem;font-weight:700;color:var(--ink)}
-  .sec-title::after{content:'';position:absolute;left:0;bottom:-2px;width:90px;height:2px;background:var(--blue)}
+  .sec-title{position:relative;display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:0 0 18px;padding-bottom:10px;border-bottom:2px solid var(--line);font-size:1.15rem;font-weight:600;color:var(--ink)}
+  .sec-title::after{content:'';position:absolute;left:0;bottom:-2px;width:60px;height:2px;background:var(--blue)}
   .sec-title small{font-size:.82rem;font-weight:500;color:var(--muted)}
 
   /* ---------- Kartu pertanyaan ---------- */
   .faq-item{background:#fff;border:1px solid var(--line);border-radius:14px;margin-bottom:12px;box-shadow:0 1px 2px rgba(15,34,64,.04);transition:border-color .2s,box-shadow .2s}
   .faq-item:hover{border-color:#bfd3f5;box-shadow:0 6px 18px rgba(15,34,64,.08)}
   .faq-item[open]{border-color:var(--blue);box-shadow:0 10px 26px rgba(29,111,224,.14)}
-  .faq-item summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:14px;padding:16px 18px;font-weight:600;line-height:1.45;color:var(--ink)}
+  .faq-item summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:14px;padding:16px 18px;font-size:.98rem;font-weight:600;line-height:1.45;color:var(--ink)}
   .faq-item summary::-webkit-details-marker{display:none}
   .faq-item summary::before{content:'?';flex-shrink:0;width:38px;height:38px;display:grid;place-items:center;border-radius:10px;background:var(--blue-soft);color:var(--blue);font-weight:700;font-size:1.1rem}
   .faq-item summary .q{flex:1}
@@ -192,15 +188,15 @@ head('FAQ', 'faq'); ?>
   .faq-item[open] summary::after{transform:rotate(225deg) translate(-2px,-2px);border-color:var(--blue)}
   .faq-item summary:focus-visible{outline:2px solid var(--blue);outline-offset:-2px;border-radius:14px}
 
-  .faq-item .jawab{margin:0 18px 0 70px;padding:0 0 20px;color:#475569;line-height:1.75;animation:faqIn .25s ease}
+  .faq-item .jawab{margin:0 18px 0 70px;padding:0 0 20px;color:#5b6b7f;font-size:.93rem;line-height:1.7;animation:faqIn .25s ease}
   .faq-item .jawab p{margin:0 0 10px}
   .faq-item .jawab p:last-child{margin-bottom:0}
   @keyframes faqIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
 
   .faq-item .jawab ul{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:8px}
   .faq-item .jawab li{--c:var(--blue);display:flex;flex-direction:column;gap:2px;padding:10px 14px;border-radius:10px;background:#f8fafc;border:1px solid var(--line);border-left:4px solid var(--c)}
-  .faq-item .jawab li b{color:var(--c);font-size:.95rem}
-  .faq-item .jawab li span{color:#475569;font-size:.93rem;line-height:1.6}
+  .faq-item .jawab li b{color:var(--c);font-size:.93rem}
+  .faq-item .jawab li span{color:#5b6b7f;font-size:.9rem;line-height:1.6}
   @media(min-width:700px){
     .faq-item .jawab li{flex-direction:row;gap:14px;align-items:baseline}
     .faq-item .jawab li b{flex:0 0 170px}
@@ -213,8 +209,8 @@ head('FAQ', 'faq'); ?>
   .faq-help{margin-top:44px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px 30px;
     background:#fff;border:1px solid var(--line);border-left:6px solid #e53935;border-radius:14px;padding:24px 30px;box-shadow:0 6px 20px rgba(15,34,64,.08)}
   .faq-help .txt{flex:1 1 320px}
-  .faq-help h3{margin:0 0 4px;font-size:1.35rem;color:var(--ink)}
-  .faq-help p{margin:0;color:var(--muted);line-height:1.6}
+  .faq-help h3{margin:0 0 4px;font-size:1.15rem;font-weight:600;color:var(--ink)}
+  .faq-help p{margin:0;color:var(--muted);font-size:.93rem;line-height:1.6}
   .faq-help .acts{display:flex;flex-wrap:wrap;gap:10px}
 
   /* ---------- Responsif ---------- */
@@ -242,7 +238,7 @@ head('FAQ', 'faq'); ?>
     <div class="wrap">
       <div class="faq-crumb"><a href="index.php">Beranda</a><span>/</span>FAQ</div>
       <h1>Pertanyaan Umum</h1>
-      <p><?= $semua ?> pertanyaan seputar website, fitur, dan keselamatan saat banjir.</p>
+      <p>pertanyaan seputar website, fitur, dan keselamatan saat banjir.</p>
     </div>
   </div>
 
