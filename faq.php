@@ -83,13 +83,13 @@ $faq = [
   ]],
 ];
 
-// Warna penanda untuk poin yang berupa status (selain itu pakai warna biru default)
+// Warna penanda untuk poin yang berupa status 
 $warna_status = [
   'aman' => '#16a34a', 'siaga' => '#d97706', 'awas' => '#dc2626',
   'hilang' => '#dc2626', 'ditemukan' => '#16a34a', 'mengungsi' => '#2563eb', 'dirawat' => '#7c3aed',
 ];
 
-// ====== FILTER (pakai PHP, tanpa JavaScript) ======
+// ====== FILTER ======
 $k = $_GET['k'] ?? 'semua';
 if ($k !== 'semua' && !isset($faq[$k])) $k = 'semua';
 $q = trim($_GET['q'] ?? '');
